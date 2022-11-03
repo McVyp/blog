@@ -55,7 +55,6 @@ function Post(){
             </div>
             <Author />
         </div>
-
     </div>
 
   )

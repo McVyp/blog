@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Author from "../../components/_child/author";
+import Related from "../../components/_child/related";
 import Layout from "../../layout/Layout";
 
 export default function Page() {
@@ -26,6 +27,7 @@ export default function Page() {
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </div>
           </div>
+          <Related />
       </section>
     </Layout>
   )
