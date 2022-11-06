@@ -23,27 +23,29 @@ export default function Section3() {
 }
 
 function Post() {
-    return(
+    return (
         <div className='grid'>
             <div className='images'>
                 <Link href={"/"}>
-                    <a>
-                        <Image 
-                            src={"/assets/images/img1.jpg"}
-                            width={600}
-                            height={400}
-                            alt=""
-                        />
-                    </a>
+
+                    <Image 
+                        src={"/assets/images/img1.jpg"}
+                        width={600}
+                        height={400}
+                        alt=""
+                    />
+
                 </Link>
             </div>
             <div className='info flex justify-center flex-col py-4'>
                 <div className="category">
-                    <Link href={"/"}><a className="text-orange-600 hover:text-orange-800">Indoors, Tings to Do</a></Link>
-                    <Link href={"/"}><a className="text-gray-600 hover:text-gray-800">- Nov 2, 2022</a></Link>
+                    <Link href={"/"} className="text-orange-600 hover:text-orange-800">Indoors, Tings to Do</Link>
+                    <Link href={"/"} className="text-gray-600 hover:text-gray-800">- Nov 2, 2022</Link>
                 </div>
                 <div className="title">
-                    <Link href={"/"}><a className="text-3xl md:text-4xl font-bold text-gray-800 hover:text-gray-600">All things fall apart when they come too close</a></Link>
+                    <Link
+                        href={"/"}
+                        className="text-3xl md:text-4xl font-bold text-gray-800 hover:text-gray-600">All things fall apart when they come too close</Link>
                 </div>
                 <p className="text-gray-500 py-3">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
@@ -51,5 +53,5 @@ function Post() {
                 <Author />
             </div>
         </div>
-    )
+    );
 }
