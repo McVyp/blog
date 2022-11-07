@@ -17,7 +17,8 @@ export default function Related() {
         <h1 className='font-bold text-3xl py-12'>Related</h1>
         <div className="flex flex-col gap-10">
             {
-                data.map((value,index)=>(                    <Post  key={index} data={value}/>
+                data.map((value,index)=>(                    
+                    <Post  key={index} data={value}/>
                 ))
             }        
         </div>
