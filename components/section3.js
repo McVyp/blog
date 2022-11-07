@@ -58,7 +58,7 @@ function Post({ data }){
                 <p className="text-gray-500 py-3">
                 {description || "No Description"}
                 </p>
-                { author ? <Author /> : <></>}
+                { author ? <Author {...author}/> : <></>}
             </div>
         </div>
     )
