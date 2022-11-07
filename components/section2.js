@@ -34,15 +34,15 @@ function Post( { data } ){
     return (
         <div className="item">
             <div className="images flex justify-center">
-                <Link href={"/"}><a><Image src={img || "/assets/images/img1.jpg"} className="rounded" width={500} height={350} alt=""/></a></Link>
+                <Link href={`/posts/${id}`}><a><Image src={img || "/assets/images/img1.jpg"} className="rounded" width={500} height={350} alt=""/></a></Link>
             </div>
             <div className="info flex justify-center flex-col py-4">
                 <div className="cat">
-                    <Link href={"/"}><a className="text-orange-600 hover:text-orange-800">{category || "Unknown"}</a></Link>
-                    <Link href={"/"}><a className="text-gray-800 hover:text-gray-600">- {published || "Unknown"}</a></Link>
+                    <Link href={`/posts/${id}`}><a className="text-orange-600 hover:text-orange-800">{category || "Unknown"}</a></Link>
+                    <Link href={`/posts/${id}`}><a className="text-gray-800 hover:text-gray-600">- {published || "Unknown"}</a></Link>
                 </div>
                 <div className="title">
-                    <Link href={"/"}><a className="text-xl font-bold text-gray-800 hover:text-gray-600">{title || "Title"}</a></Link>
+                    <Link href={`/posts/${id}`}><a className="text-xl font-bold text-gray-800 hover:text-gray-600">{title || "Title"}</a></Link>
                 </div>
                 <p className="text-gray-500 py-3">
                     {subtitle||"Unknown"}
