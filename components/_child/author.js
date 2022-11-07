@@ -15,7 +15,7 @@ export default function Author() {
           <div className='flex flex-col justify-center px-4'>
               <Link
                   href={"/"}
-                  className='text-lg font-bold text-gray-800 hover:text-gray-600'>Makima</Link>
+                  className='text-xl font-bold text-gray-800 hover:text-gray-600'>Makima</Link>
               <span className='text-sm text-gray-600'>CEO</span>
           </div>
 
