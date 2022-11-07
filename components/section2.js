@@ -30,7 +30,7 @@ export default function section2() {
 
 
 function Post( { data } ){
-    const { id, title, category, img, published, author } = data;
+    const { id, title, category, subtitle, img, published, author } = data;
     return (
         <div className="item">
             <div className="images flex justify-center">
@@ -45,8 +45,7 @@ function Post( { data } ){
                     <Link href={"/"}><a className="text-xl font-bold text-gray-800 hover:text-gray-600">{title || "Title"}</a></Link>
                 </div>
                 <p className="text-gray-500 py-3">
-                    Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind 
-                    text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                    {subtitle||"Unknown"}
                 </p>
                 { author ? <Author></Author> : <></>}
             </div>
